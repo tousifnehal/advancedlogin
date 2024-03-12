@@ -6,19 +6,27 @@ import functions.signup as signup
 import functions.forgotpass as forgotpass
 import functions.forgotuname as forgotuname
 
+# Variables
+
 datafolder = "data"
 rootfolder = os.getcwd()
 login = False
 
+# Login Commands
+
 logincmd = ["1 Login ✅", "2 Sign Up 📜", "3 Forgot Password 🙄", "4 Forgot Username 🙄", "5 Exit ➡"]
 setup.runsetup()
 
+
+# Loop for commands
 
 valTrue = True
 
 while valTrue:
     
     cmd = int(input(f"❗ Type The Number Besides The Command To Execute The Command \n\t{logincmd[0]}\n\t{logincmd[1]} \n\t{logincmd[2]} \n\t{logincmd[3]} \n\t{logincmd[4]}\n"))
+    
+    # Login Functions
     
     if int(cmd) == 1:
                 
